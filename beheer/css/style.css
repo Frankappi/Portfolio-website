@@ -1,0 +1,134 @@
+body {
+  font-family: lucida console;
+  background-color: transparent;
+  background-color: #054194;
+}
+
+/* ================== de content ================== */
+
+.header {
+  background-color: rgb(31, 48, 87);
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  min-height: 150px;
+  padding: 25px 5px 25px 5px;
+}
+
+/* ================== de content ================== */
+
+.content {
+  background-color: #333;
+}
+
+.logbox {
+  min-height: 300px;
+  margin: 80px 10px 90px 10px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+
+.logform {
+  margin-top: 70px;
+}
+
+.loginput {
+  padding: 8px 25px 8px 25px;
+  height: auto;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.loginput:focus {
+  outline: none;
+  outline-color: transparent;
+  border: 2px solid white;
+  transition: 0.4s;
+}
+
+.logbtn {
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.logbtn:hover {
+  color: white;
+  letter-spacing: 3px;
+  transition: 0.4s;
+}
+.dashbtn {
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: bold;
+  color: gray;
+  transition: 0.4s;
+}
+
+.dashbtn:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+/* ================ dashboard =============== */
+
+.dashboard {
+  background-color: #333;
+}
+
+
+/* ================== de footer ================== */
+
+.footer {
+  background-color: rgb(31, 48, 87);
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  min-height: 150px;
+  padding: 25px 5px 25px 5px;
+}
+
+.fbox {
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+.flink {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.flink a {
+  transition: 0.4s;
+}
+
+.flink a:hover {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.createflink {
+  font-family: Magneto;
+  margin: 40px 0 0 0;
+  font-weight: lighter;
+  color: white;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+.createflink:hover {
+  font-size: 36px;
+  transition: 0.4s;
+}

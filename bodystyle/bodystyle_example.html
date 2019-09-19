@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Body Style Animaties</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/specs.css">
+  </head>
+  <body>
+    
+    
+    <section class="topheader">
+      <div class="col-sm-12 col-xs-12 toprow">
+        <div class="container">
+          <div class="col-sm-4 col-xs-12">
+            <p class="toptext">Onze winkel in Alkmaar bestaat al 60 jaar!</p>
+          </div>
+          <div class="col-sm-3 col-xs-12">
+            <p class="toptext">Alle grote merken onder één dak</p>
+          </div>
+          <div class="col-sm-3 col-xs-9">
+            <p class="toptext">Gratis verzending vanaf €40 in Nederland</p>
+          </div>
+          <div class="col-sm-2 col-xs-3 text-right">
+            <p class="toptext">Beoordelingen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="header">
+      <div class="col-sm-12 col-xs-12 menubar">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-xs-12">
+            <a href="#"><img src="img/bodystyle.svg" class="brandlogo"></a>
+          </div>
+          <div class="col-sm-10 col-xs-12">
+            <div class="col-sm-12">
+              <div class="col-sm-5 search-container">
+                <input type="text" class="form-control searchbar" placeholder="Zoek door de hele winkel">
+                <a href="#" class="searchicon"><i class="fas fa-search"></i></a>
+              </div>
+              <div class="col-sm-4 text-left">
+                <a href="tel:+31725115187" type="button" class="btn btn-sm btn-warning">Bel onze klantenservice: 072-5115187</a>
+              </div>
+              <div class="col-sm-3 text-right">
+                <button class="btn iconbtn" id="userBtn"><i class="far fa-user-circle webicon"></i></button>
+                <button class="btn iconbtn"><i class="far fa-heart webicon"></i></button>
+                <button class="btn iconbtn" id="cartBtn"><i class="fas fa-cart-arrow-down webicon"></i></button>
+                
+                <div class="col-sm-2 text-center" id="userPanel">
+                  <ul class="userlist">
+                    <li><a href="#" class="btn">Inloggen</a></li>
+                    <li><a href="#" class="btn">Account maken</a></li>
+                  </ul>
+                </div>
+                
+                <div class="col-sm-2" id="cartPanel">
+                  <h4 class="panelheading">Winkelwagen</h4>
+                  <p class="paneltext">U heeft geen product(en) in uw winkelwagen.</p>
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </div>
+            <div class="col-sm-12 menurow">
+              <nav class="navbar">
+                <div class="container-fluid">
+                  <ul class="nav navbar-nav">
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle menubtn" href="#" id="navbarDropdown" data-toggle="dropdown">
+                        Dames beenmode
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <div class="row">
+                            <div class="container">
+                              
+                              <div class="col-sm-3">
+                                <h3>Sokken</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Kousenvoetjes</a></li>
+                                  <li><a href="#" class="droplink">Pantysokjes</a></li>
+                                  <li><a href="#" class="droplink">Huissokken</a></li>
+                                  <li><a href="#" class="droplink">Sportsokken</a></li>
+                                  <li><a href="#" class="droplink">Zonder elastiek</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Broeken</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Jeans</a></li>
+                                  <li><a href="#" class="droplink">Shorts</a></li>
+                                  <li><a href="#" class="droplink">Leggins</a></li>
+                                  <li><a href="#" class="droplink">Herfst</a></li>
+                                  <li><a href="#" class="droplink">Winter</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        
+                      </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a class="dropdown-toggle menubtn" href="#">Dames ondermode</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="container">
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a class="dropdown-toggle menubtn" href="#">Heren beenmode</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="container">
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a class="dropdown-toggle menubtn" href="#">Heren ondermode</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="row">
+                            <div class="container">
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                              <div class="col-sm-3">
+                                <h3>Title</h3>
+                                <div class="dropdown-divider"></div>
+                                <ul class="droplist">
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                  <li><a href="#" class="droplink">Item</a></li>
+                                </ul>
+                              </div>
+                              
+                            </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#" class="menubtn">Merken</a></li>
+                    <li><a href="#" class="menubtn">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="main">
+      <div class="container">
+      
+        <div class="col-sm-12 col-xs-12 headbox">
+          <div class="col-sm-7 col-xs-7 headtext">
+            <h2>Marie Jo</h2>
+            <h3>De wintercollectie 18/19</h3>
+            <button class="btn button">Bekijk de gehele collectie</button>
+          </div>
+          <div class="col-sm-5 col-xs-5 imgbox">
+            <img src="img/example.gif" class="jumboimg">
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-xs-12 imagesblock">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <img src="img/example.gif" class="colomimg">
+              <div class="middle">
+                <a href="#" class="btn">Image One</a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <img src="img/example.gif" class="colomimg">
+              <div class="middle">
+                <a href="#" class="btn">Image Two</a>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <img src="img/example.gif" class="colomimg">
+              <div class="middle">
+                <a href="#" class="btn">Image Three</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+      <div class="container">
+        
+        <div class="col-sm-12 galleryblock">
+          <p class="invtext"><i class="far fa-star webicon"></i> Net binnen <i class="fas fa-angle-double-down" id="newInv"></i></p>
+        </div>
+        
+        <div class="col-sm-12" id="newInvBlock">
+          <div class="row" id="newProducts">
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+      <div class="container">
+        
+        <div class="col-sm-12 galleryblock">
+          <p class="cattext"><i class="far fa-heart webicon"></i> Populaire categorieën <i class="fas fa-angle-double-down" id="popCat"></i></p>
+        </div>
+        
+        <div class="col-sm-12" id="popCatBlock">
+          <div class="row" id="popCatImg">
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+            <div class='col-sm-3'>
+              <img src="img/example.gif">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+    </section>
+    
+    <section class="footer">
+      <div class="container">
+        <div class="col-sm-12">
+          <h2>Ullamco laboris nisi ut aliquid ex ea commodi consequat.</h2>
+          <div class="col-sm-6">
+            <p>
+              Plura mihi bona sunt, inclinet, amari petere vellent. Me non paenitet nullum festiviorem excogitasse ad hoc. Cum sociis natoque penatibus et magnis dis parturient. Magna pars studiorum, prodita quaerimus.
+            </p>
+            <p>
+              Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Etiam habebis sem dicantur magna mollis euismod. Prima luce, cum quibus mons aliud consensu ab eo. Integer legentibus erat a ante historiarum dapibus. Etiam habebis sem dicantur magna mollis euismod. Prima luce, cum quibus mons aliud consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
+            </p>
+          </div>
+          <div class="col-sm-6">
+             <p>
+              Plura mihi bona sunt, inclinet, amari petere vellent. Me non paenitet nullum festiviorem excogitasse ad hoc. Cum sociis natoque penatibus et magnis dis parturient. Magna pars studiorum, prodita quaerimus.
+            </p>
+            <p>
+              Inmensae subtilitatis, obscuris et malesuada fames. Fabio vel iudice vincam, sunt in culpa qui officia. Etiam habebis sem dicantur magna mollis euismod. Prima luce, cum quibus mons aliud consensu ab eo. Integer legentibus erat a ante historiarum dapibus. Etiam habebis sem dicantur magna mollis euismod. Prima luce, cum quibus mons aliud consensu ab eo. Integer legentibus erat a ante historiarum dapibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br>
+    
+    
+    <script type="text/javascript">
+      
+    //   $(window).scroll(function() {
+		  // if ($(document).scrollTop() > 50) {
+		    
+		  //   var prevScrollpos = window.pageYOffset;
+    //     window.onscroll = function() {
+    //     var currentScrollPos = window.pageYOffset;
+    //       if (prevScrollpos > currentScrollPos) {
+    //         $("#navbar").removeClass("hidenav");
+    //       } else {
+    //         $("#navbar").addClass("hidenav");
+    //       }
+    //       prevScrollpos = currentScrollPos;
+    //     }
+        
+		  // });
+		  
+		  // $(document).ready(function () {
+    //     'use strict';
+    //     var c, currentScrollTop = 0,
+    //         navbar = $('.menubar');
+      
+    //     $(window).scroll(function () {
+    //         var a = $(window).scrollTop();
+    //         var b = navbar.height();
+           
+    //         currentScrollTop = a;
+           
+    //         if (c < currentScrollTop && a > b + b) {
+    //           navbar.addClass("hidenav");
+    //         } else if (c > currentScrollTop && !(a <= b)) {
+    //           navbar.removeClass("hidenav");
+    //         }
+    //         c = currentScrollTop;
+    //     });
+    //   });
+        
+      $("#userBtn").click(function(){
+          $("#userPanel").toggleClass("open");
+          $("#cartPanel").removeClass("open");
+      });
+      
+      $("#cartBtn").click(function(){
+          $("#cartPanel").toggleClass("open");
+          $("#userPanel").removeClass("open");
+      });
+      
+      $("#newInv").click(function(){
+          $("#newInvBlock").toggleClass("open");
+          $("#newProducts").toggleClass("slide");
+          $("#newInv").toggleClass("turn");
+      });
+      
+      $("#popCat").click(function(){
+          $("#popCatBlock").toggleClass("open");
+          $("#popCatImg").toggleClass("slide");
+          $("#popCat").toggleClass("turn");
+      });
+      
+      
+      function scrollFixed() {
+            var n = 0,
+                t = $('.header-wrapper');
+            $(window).scroll(function() {
+                var s = $(window).scrollTop();
+                s <= 178 || $(".drawer").hasClass("is-active") || $(".drawer--search").hasClass("is-active") ? (t.removeClass("is-hidden"), t.removeClass("is-scrolled"), $('body').removeClass('scroll-is-active')) : s >= n ? (t.addClass("is-hidden"), t.addClass("is-scrolled"), $('body').addClass('scroll-is-active')) : t.removeClass("is-hidden"), n = s
+            });
+        }
+    </script>
+  </body>
+</html>

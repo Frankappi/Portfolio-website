@@ -1,0 +1,383 @@
+/*
+  =========== WEB Fonts =============
+  
+  font-family: 'Righteous', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Bangers', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Chewy', cursive;
+  font-family: 'Bungee Inline', cursive;
+  
+*/
+
+/* ====== general style =========== */
+
+body {
+  background-color: #6390b6;
+}
+
+#home {
+  transition: 0.4s;
+}
+
+.about {
+  background-color: #86a9c6;
+  transition: 0.4s;
+}
+
+.service {
+  background-color: #a8c1d7;
+  transition: 0.4s;
+}
+
+.contact {
+  background-color: #cbdae7;
+  transition: 0.4s;
+}
+
+.aboutcontent {
+  display: none;
+  margin: 100px 0 100px 0;
+}
+
+.servcontent {
+  display: none;
+  margin: 100px 0 100px 0;
+}
+
+.contactcontent {
+  display: none;
+  margin: 100px 0 100px 0;
+}
+/* ====== top banner =========== */
+
+.topbanner {
+  background-image: url("/img/topbackground.jpg");
+  border-radius: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+  transition: 0.7s;
+}
+
+.topbanner h2 {
+  color: white;
+}
+
+.brand {
+  color: white;
+  transition: 0.4s;  
+}
+
+.brand:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px rgba(0,0,0,0.6);
+  transform: rotateZ(2deg);
+  transition: 0.4s;
+}
+
+.menubalk {
+  border-radius: 0;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: 0.6s;
+}
+
+.menubalk li {
+  padding: 0 35px 0 35px;
+  font-size: 14pt;
+}
+
+.menulink {
+  color: #2E4A62!important;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.menulink:hover {
+  color: #222!important;
+  transition: 0.4s;
+}
+
+.loglink {
+  color: #BBB;
+  transition: 0.5s;
+}
+
+.loglink:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+
+/* ========== shrink classes ============= */
+
+.topbanner.small {
+  transition: 0.7s;
+}
+
+.menubalk.small {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 15px 80px 15px 80px;
+  background-color: #337ab7;
+  transition: 0.6s;
+}
+
+.menubalk.small .menulink:hover {
+  color: white!important;
+}
+
+.workopen.small  {
+  margin-top: 18px!important;
+}
+
+/* ========== projects content ============= */
+
+.abouttopblok {
+  margin-bottom: 0;
+  min-height: 60px;
+  background: linear-gradient(to top right, #2E4A62 10%, #337ab7 90%);
+  border: 1px solid #337ab7;
+  text-align: right;
+}
+
+.abouttitle {
+  color: white;
+  margin:0;
+  padding-right: 75px;
+}
+
+.aboutblok {
+    margin:0;
+    padding: 20px 40px 20px 40px;
+    border-radius: 0 0 20px 20px!important;
+    border-top: 5px solid #337ab7;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.aboutblok h4 {
+  font-size: 17pt;
+}
+
+.aboutblok p {
+  font-size: 11pt;
+}
+
+.introblok {
+  margin: 0 0 25px 0;
+}
+
+.sitecard {
+  padding:0;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.sitecard:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+  border: 2px solid #337ab7;
+  transition: 0.4s;
+}
+
+.sitecard h4 {
+  padding: 12px 30px 12px 30px;
+  background-color: #337ab7;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+
+.sitecard p {
+  padding-left: 30px;
+  padding-top: 15px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+}
+
+.sitelink {
+  color: white;
+  transition: 0.4s;
+}
+
+.sitelink:hover {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.siteimg {
+  height: 200px;
+  width: 100%;
+}
+
+.personalsitecard {
+  border: 2px solid transparent;
+  padding:0;
+  transition: 0.5s;
+}
+
+.personalsitecard:hover {
+  border: 2px solid orange;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+  transition: 0.4s;
+}
+
+.personalsitecard h4 {
+  padding: 12px 30px 12px 30px;
+  background-color: orange;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+
+.personalsitecard p {
+  padding-left: 30px;
+  padding-top: 15px;
+  font-family: 'Work Sans', sans-serif;
+  color: orange;
+}
+
+/* contact content */
+
+.contacttopblok {
+  margin-bottom: 0;
+  min-height: 60px;
+  background: linear-gradient(to top right, #2E4A62 10%, #337ab7 90%);
+  border: 1px solid #337ab7;
+  text-align: right;
+}
+
+.contactblok {
+  margin:0;
+  padding: 20px 40px 20px 40px;
+  border-radius: 0 0 20px 20px!important;
+  border-top: 5px solid #337ab7;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.contacttitle {
+  color: white;
+  margin:0;
+  padding-right: 75px;
+}
+
+.contactinfo {
+  border-right: 1px solid #337ab7;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.table td {
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+
+.icontd {
+  text-align: center;
+}
+
+.conicon {
+  font-size: 20pt;
+}
+
+.coninput {
+  border: 1px solid #337ab7;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 12px 8px 12px 8px;
+  transition: 0.5s;
+}
+
+.coninput:focus {
+  border: 1px solid #337ab7;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: inset 0 1px 1px #337ab7, 0 0 8px #337ab7;
+  color: #2E4A62;
+  font-weight: bold;
+  padding: 12px 8px 12px 30px;
+  transition: 0.5s;
+}
+
+.sendbtn {
+  background-color: #337ab7;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.sendbtn:hover {
+  color: white;
+  background-color: #2E4A62;
+  transition: 0.5s;
+}
+
+/* ========== services ===========*/
+
+.servtopblok {
+  margin-bottom: 0;
+  min-height: 60px;
+  background: linear-gradient(to top right, #2E4A62 10%, #337ab7 90%);
+  border: 1px solid #337ab7;
+  text-align: right;
+}
+
+.servtitle {
+  color: white;
+  margin:0;
+  padding-right: 75px;
+}
+
+.servblok {
+  margin:0;
+  padding: 20px 40px 20px 40px;
+  border-radius: 0 0 20px 20px!important;
+  border-top: 5px solid #337ab7;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.servlist {
+  width: 50%;
+}
+
+.servlist li {
+  background-color: transparent;
+}
+
+.servcard {
+  background-color: #337ab7;
+  color: white;
+}
+
+/* ====== footer ========= */
+
+.footerbox {
+  background-color: transparent;
+  border-top: 2px solid #2E4A62;
+  color: #000;
+  margin-top: 69px;
+  padding: 20px 20px 20px 20px;
+}
+
+.ftlkn {
+  color: #000;
+  font-weight: bold;
+  font-size: 12pt;
+  transition: 0.4s;
+}
+
+.ftlkn:hover {
+  color: #2E4A62;
+  transition: 0.4s;
+}

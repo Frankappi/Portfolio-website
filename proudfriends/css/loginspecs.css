@@ -1,0 +1,232 @@
+ /*Google fonts */
+
+/*font-family: 'Gloria Hallelujah', cursive;*/
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Courgette', cursive;*/
+/*font-family: 'Kaushan Script', cursive;*/
+/*font-family: 'Jua', sans-serif; */
+
+/* ======================================= */
+            /*the scrollbar*/
+/* ======================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+	  background-color: orange;
+    border-radius: 0;
+}
+
+/* ======================================= */
+            /*general styling*/
+/* ======================================= */
+
+body {
+  background-color: #edf1f5 !important;
+  font-family: 'Poppins', sans-serif!important;
+}
+
+.row {
+  margin: 0!important;
+}
+
+.content {
+  background-image: url('../img/urban.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  padding: 145px 0 120px 0!important;
+}
+
+/* ======================================= */
+              /*the content*/
+/* ======================================= */
+
+/* the bottom button to learn more */
+
+.learnmorebox {
+  background-color: rgba(0, 0, 0, 0.75)!important;
+  padding: 50px 10px 50px 10px!important;
+  border-radius: 45px!important;
+  margin-left: 25px!important;
+  margin-top:20px!important;
+  transition: 0.4s!important;
+}
+
+.learnmorebox:hover {
+  background-color:rgba(0,0,0,0.9)!important;
+  transform: rotateZ(-5deg) scale(1.15,1.15);
+  position:static;
+  z-index: 9999;
+  transition: 0.4s!important;
+}
+
+/* the login form */
+
+.welcometitle {
+  color: #BBB!important;
+}
+.learn {
+  color: orange!important;
+}
+.proud {
+  color: gray!important;
+}
+.friends {
+  color: orange!important;
+}
+
+.loginform {
+  padding: 25px 45px 25px 45px!important;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 15px!important;
+}
+
+.logininput {
+  border: 3px solid transparent!important;
+  color: #000!important;
+  padding: 8px!important;
+  transition: 0.4s!important;
+}
+
+#email.error, #password.error {
+  border: 3px solid red!important;
+}
+
+#email.success, #password.success {
+  border: 3px solid green!important;
+}
+
+.logininput:focus {
+  outline-color: transparent!important;
+  padding: 8px 8px 8px 25px!important;
+  box-shadow: inset 0px 0px 1px 1px rgba(255, 165, 0, 0.6)!important;
+  border-color: orange!important;
+  transition: 0.4s!important;
+}
+
+.loginbtn {
+  color: white!important;
+  padding: 6px 60px 6px 60px!important;
+  transition: 0.4s!important;
+}
+.loginbtn:hover {
+  padding: 6px 100px 6px 100px!important;
+  letter-spacing: 2px!important;
+  text-shadow: 0 10px 15px rgba(0,0,0,0.8);
+  transition: 0.4s!important;
+}
+
+.loginbtn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0,.5)!important;
+}
+
+.extrabtn:hover {
+  color: orange!important;
+}
+
+.extrabtn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0,.5)!important;
+}
+
+.forgotmailbox {
+  position: fixed!important;
+  top: 25%;
+  left: -35%;
+  background-color: #4F5467!important;
+  padding: 35px 40px 35px 40px!important;
+  color: white!important;
+  border-radius: 15px!important;
+  transition: 0.4s!important;
+}
+
+.forgotmailbox p {
+  font-size: 12px!important;
+}
+
+.sendmailbtn:hover {
+  color: white!important;
+}
+
+.closebtn {
+  float: right!important;
+}
+
+.forgotmailbox.open {
+  left: 4%!important;
+  transition: 0.4s!important;
+}
+
+.registerform {
+  padding: 25px 45px 25px 45px!important;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  border-radius: 15px!important;
+  transform: scale(0.01,0.01);
+}
+
+.backbtn {
+  float: right!important;
+  margin: 0 0 25px 0!important;
+}
+
+.registerform h3 {
+  color: white!important;
+}
+
+.registerbox {
+  position: fixed!important;
+  top: 13%;
+  right: -32%;
+  background-color: #4F5467!important;
+  padding: 35px 40px 35px 40px!important;
+  color: white!important;
+  border-radius: 15px!important;
+  transition: 0.4s!important;
+}
+
+.registerbtn:hover {
+  color: white!important;
+}
+
+/* ======================================= */
+              /*the footer*/
+/* ======================================= */
+
+.footer {
+  padding: 10px 0 10px 0!important;
+  width: 100%!important;
+  position: fixed!important;
+  bottom: 0;
+  background-color: #404040 !important;
+}
+
+.footerbtn {
+  color: #BBB!important;
+  background-color: #404040!important;
+  text-transform: uppercase;
+  border: none!important;
+  transition: 0.4s!important;
+}
+
+.footerbtn:hover {
+  color: white!important;
+  transition: 0.4s!important;
+}
+
+.footerbtn:focus {
+  outline-color: transparent!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+  color: orange!important;
+}

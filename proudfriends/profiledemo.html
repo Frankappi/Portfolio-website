@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ProudFriends | Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- Font awesome -->
+  <script src="font-awesome/fontawesome-all.js"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Gloria+Hallelujah|Kaushan+Script|Poppins|Jua|Source+Code+Pro" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+  
+  <!--=========================================== -->
+                  <!--Het menu -->
+  <!--=========================================== -->
+  <nav class="navbar navbar-expand-sm menubar">
+    <div class="col-sm-3">
+      <!-- Brand -->
+    <a href="bs4demo.html" class="brandlink"><h2 class="webbrand">Proud<font style="color:orange;font-size:26px;">Friends</font></h2></a>
+    </div>
+    <div class="col-sm-3">
+      <!-- search form -->
+      <form class="form-inline search" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link menubtn" href="profiledemo.html">Kevin Goedhardt&nbsp;&nbsp; <i class="fas fa-user-circle"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menubtn" href="bs4demo.html">Wall&nbsp;&nbsp; <i class="fas fa-book"></i></a>
+        </li>
+    
+         <!--Dropdown notifications -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menubtn" href="#" id="navbardrop" data-toggle="dropdown">
+            Notifications&nbsp;&nbsp; <i class="fas fa-bell"></i>
+          </a>
+          <div class="dropdown-menu notdroppanel">
+            <a class="dropdown-item dropbtn" href="#friendSection">Friends requests <i class="fas fa-child dropicon"></i></a>
+            <a class="dropdown-item dropbtn" href="#inboxSection">Messages <i class="fas fa-comment dropicon"></i></a>
+            <a class="dropdown-item dropbtn" href="#eventSection">Events <i class="far fa-calendar-alt dropicon"></i></a>
+          </div>
+        </li>
+         <!--Dropdown settings-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menubtn" href="#" id="navbardrop" data-toggle="dropdown">
+            Settings&nbsp;&nbsp; <i class="fas fa-cogs"></i>
+          </a>
+          <div class="dropdown-menu setdroppanel">
+            <a class="dropdown-item dropbtn" href="#">Support <i class="fas fa-question dropicon"></i></a>
+            <a class="dropdown-item dropbtn" href="#">Settings <i class="fas fa-cog dropicon"></i></a>
+            <a class="dropdown-item dropbtn" href="#">Logout <i class="fas fa-sign-out-alt dropicon"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--=========================================== -->
+                  <!--De chat -->
+  <!--=========================================== -->
+  
+  <div class="col-sm-3 chatbar" id="chatBox">
+    <div class="col-sm-12">
+      <button type="button" class="btn chatopen" id="chatBtn">Chat <i class="far fa-comments"></i></button>
+      <form action="#">
+        <div class="form-group statusbar">
+          <div class="row">
+            <label for="sel1" class="selectlabel">Change status:</label>
+            <select class="form-control selectstatus" id="/" name="/">
+              <option style="color:limegreen;">Online</option>
+              <option style="color:red;">Busy</option>
+              <option style="color:orange;">Away</option>
+              <option style="color:gray;">Offline</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-12 chatbox">
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Polo Kool</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 2hr
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Quinter Ypsolon</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 5hr
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Mandy Haarklip</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 23mn
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Habiabaibibedidoe Van Kaas</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 6j
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Klaas Jan Cornelis</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 3h
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Manon Kool</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 12j
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Fred Koleboer</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 1s
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-2 chatrowphoto">
+              <img src="img/200x200.gif" class="img-fluid chatphoto" alt="Cinque Terre">
+            </div>
+            <div class="col-sm-7 chatrow">
+              <div class="row">
+                <p>Fred Koleboer</p>
+                <br>
+                <p><i>Helllo mate, how are...</i></p>
+              </div>
+            </div>
+            <div class="col-sm-2 chatrow">
+              <i class="far fa-clock"></i> 1s
+            </div>
+          </div>
+          
+    </div>
+  </div>
+</section>
+
+<!--=========================================== -->
+              <!--De content -->
+<!--=========================================== -->
+
+<section class="content">
+  <div class="row">
+      <div class="col-sm-2 menusectionleft">
+        <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
+            <img src="img/200x200.gif" class="img-fluid prophoto">
+            <h4 class="nametitle">Kevin</h4>
+            <h5 class="suretitle">Goedhardt</h5>
+          </div>
+          <div class="col-sm-12">
+            <br>
+            <a href="#inboxSection" class="btn promebtnleft">Inbox&nbsp; <i class="fas fa-envelope mlicon"></i></a>
+            <a href="#friendSection" class="btn promebtnleft">Friends&nbsp; <i class="fas fa-users mlicon"></i></a>
+            <a href="#eventSection" class="btn promebtnleft">Events&nbsp; <i class="far fa-calendar-plus mlicon"></i></a>
+            <a href="#pageSection" class="btn promebtnleft">Pages&nbsp; <i class="fas fa-newspaper mlicon"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- =========================================== -->
+      <div class="col-sm-3 menusectionright"></div>
+      
+      <!--=========================================== -->
+                    <!--De day section -->
+      <!--=========================================== -->
+      <div class="col-sm-12 contentsection">
+        <div class="container">
+          <div class="col-sm-12 innercontent">
+            <div class="row">
+              <div class="col-sm-6 text-left"></div>
+              <div class="col-sm-6 text-right">
+                <!-- <p>Today is:  /javscript Date time function/ </p> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 text-center btnbox">
+                <div class="container btninnerbox">
+                  <a href="#" class="btn quotebtn">More Friends</a><a href="#" class="btn photobtn">More photo's</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!--=========================================== -->
+            <!--De Inbox section -->
+<!--=========================================== -->
+      <div class="col-sm-12 linkanchor" id="inboxSection"></div>
+      <div class="col-sm-12 contentsection">
+        <div class="container">
+          <div class="col-sm-12 innercontent">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs navborder">
+              <li class="nav-item">
+                <a class="nav-link active maillink" data-toggle="tab" href="#home">Inbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link maillink" data-toggle="tab" href="#menu1">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link maillink" data-toggle="tab" href="#menu2">System</a>
+              </li>
+              <li class="nav-item">
+                <i class="fab fa-telegram-plane addmessage" id="addMessage" title="New message"></i>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class="container tab-pane active"><br>
+                <div class="list-group">
+                  <!-- normal inbox -->
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Polo Kool</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Reminder Birthday</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>26-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Mandy Haarklip</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Reminder Event</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>24-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Fred Koleboer</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Has created a Page</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>20-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div id="menu1" class="container tab-pane fade"><br>
+                <div class="list-group">
+                  <!-- friends inbox -->
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Klaas Jan Cornelis</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Have you heard about the news ?!</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>22-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Mandy Haarklip</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Upcoming event pinkpop</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>21-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Bobo Bananaan</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">You too here ?</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>19-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div id="menu2" class="container tab-pane fade"><br>
+                <div class="list-group">
+                  <!-- system inbox -->
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">System</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Update v3.02</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>23-05</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">System</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Update v2.16</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>03-04</b></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action mailplinkbtn">
+                    <div class="row mailrow">
+                      <div class="col-sm-2 text-left">
+                        <img src="img/200x200.gif" class="img-fluid rounded-circle mailpicture">
+                      </div>
+                      <div class="col-sm-4 text-left">
+                        <p class="mailname">Admin</p>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <p class="mailsubject">Asked support</p>
+                      </div>
+                      <div class="col-sm-2 text-center">
+                        <i style="color:orange;"><b>30-03</b></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!--=========================================== -->
+            <!--De Friends section -->
+<!--=========================================== -->
+      <div class="col-sm-12 linkanchor" id="friendSection"></div>
+      <div class="col-sm-12 contentsection">
+        <div class="container">
+          <div class="col-sm-12 innercontent">
+            
+          </div>
+        </div>
+      </div>
+      
+<!--=========================================== -->
+            <!--De Event section -->
+<!--=========================================== -->
+      <div class="col-sm-12 linkanchor" id="eventSection"></div>
+      <div class="col-sm-12 contentsection">
+        <div class="container">
+          <div class="col-sm-12 innercontent">
+            
+          </div>
+        </div>
+      </div>
+      
+<!--=========================================== -->
+            <!--De Pages section -->
+<!--=========================================== -->
+      <div class="col-sm-12 linkanchor" id="pageSection"></div>
+      <div class="col-sm-12 contentsection">
+        <div class="container">
+          <div class="col-sm-12 innercontent">
+            
+          </div>
+        </div>
+      </div>
+      
+<!--=========================================== -->
+<!--=========================================== -->
+<!--=========================================== -->
+  </div>
+</section>
+
+<div class="col-sm-4 text-center confirm">
+  <h4 class="confirmtitle">Message sent to: <i>(username)</i> complete !</h4>
+  <br>
+  <button type="button" class="btn btn-success confbtn" onclick="endConfirm()">Fantastic</button>
+</div>
+
+<!-- The add message modal -->
+  <div class="modal fade" id="messageModal">
+    <div class="modal-dialog messagedialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">New message</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <input type="text" placeholder="To:" class="form-control addinput">
+            </div>
+            <hr>
+            <div class="form-group">
+              <input type="text" placeholder="Subject:" class="form-control addinput">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control addinput" rows="8" placeholder="Message:"></textarea>
+            </div>
+          </form>
+          <button type="button" class="btn btn-success">Add item</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning sendbtn" data-dismiss="modal" onclick="confirmFunction()">Send</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--=========================================== -->
+<!--=========================================== -->
+<!--=========================================== -->
+<script>
+  $(document).ready(function(){
+      $("#openMright").click(function(){
+          $(".openmright").toggleClass("rotatebtn");
+          $(".menusectionright").toggleClass("openmenu");
+      });
+  });
+  
+  $(document).ready(function(){
+      $("#chatBtn").click(function(){
+          $("#chatBox").toggleClass("showhide");
+          $(".chatopen").toggleClass("chatclose");
+      });
+  });
+  
+  $(document).ready(function(){
+      // Activate Carousel with a specified interval
+      $("#myCarousel").carousel({interval: 4000});
+          
+      // Enable Carousel Indicators
+      $(".item1").click(function(){
+          $("#myCarousel").carousel(0);
+      });
+      $(".item2").click(function(){
+          $("#myCarousel").carousel(1);
+      });
+      $(".item3").click(function(){
+          $("#myCarousel").carousel(2);
+      });
+  });
+  
+  $(document).ready(function(){
+      $("#addMessage").click(function(){
+          $("#messageModal").modal();
+      });
+  });
+  
+  function confirmFunction() {
+    $(".confirm").addClass("openconfirm");
+  }
+  
+  function endConfirm() {
+    $(".confirm").removeClass("openconfirm");
+  }
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $(".promebtnleft").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
+</body>
+</html>

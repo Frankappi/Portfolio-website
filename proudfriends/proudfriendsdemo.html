@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proud Friends | Wall</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/lazy-load.min.js"></script>
+    <script src="../js/socialyte.min.js"></script>
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/page.css" type="text/css">
+</head>
+<body id="wall">
+<section class="header">
+    <!--Header with Nav -->
+    <header>
+		<div class="col-sm-2 col-xs-12">
+			<a href="#" class="brandlink"><h2 class="webbrand">Proud<font style="color:orange;font-size:26px;">Friends</font></h2></a>
+		</div>
+		<div class="col-sm-10 col-xs-12 menurow">
+			<div class="row">
+				<div class="col-sm-2 hidden-xs"></div>
+				<div class="col-sm-3 col-xs-4">
+				<!-- =============================================== -->
+				<!-- ================ Zoeken input ================= -->
+				<!-- =============================================== -->
+					<form class="text-left search" method="GET">
+						<input name="q" type="text" placeholder="Search...">
+					</form>
+				</div>
+				<div class="col-sm-7 col-xs-8">
+				<!-- =============================================== -->
+				<!-- =============== Profile button ================ -->
+				<!-- =============================================== -->
+				<span>
+				<a href="?p=1&id=2" title="Profile" class="menubtn"><span class="hidden-xs hidden-sm">Franklin&nbsp;Schouten</span> <i class="fa fa-user" aria-hidden="true"></i></a></span>
+				<!-- ============================================ -->
+				<!-- =============== Wall button ================ -->
+				<!-- ============================================ -->
+				<span>
+					<a href="?p=0" title="Wall" class="menubtn"><span class="hidden-xs hidden-sm">Wall </span> <i class="fa fa-database" aria-hidden="true"></i></a>
+				</span>
+				<!-- ======================================================= -->
+				<!-- =============== Notifications button ================== -->
+				<!-- ======================================================= -->
+				<span class="dropdown-toggle menubtn" role="button" id="dropdownNotification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="hidden-xs hidden-sm">Notifications </span> <i class="fa fa-bell-o" aria-hidden="true"></i><span class="badge">2</span>
+				</span>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownNotification">
+					<li class="new-not">
+						<a href="#" title="User name comment"><img src="img/user2.jpg" alt="User name" class="img-circle img-user-mini"> User comments your post</a>
+					</li>
+					<li class="new-not">
+						<a href="#" title="User name comment"><img src="img/user3.jpg" alt="User name" class="img-circle img-user-mini"> User comments your post</a>
+					</li>
+					<li>
+						<a href="#" title="User name comment"><img src="img/user4.jpg" alt="User name" class="img-circle img-user-mini"> User comments your post</a>
+					</li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#" title="All notifications">All Notifications</a></li>
+				</ul>
+				<!-- ================================================ -->
+				<!-- =============== Settings button ================ -->
+				<!-- ================================================ -->
+                <span class="dropdown-toggle menubtn" role="button" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <span class="hidden-xs hidden-sm">Settings</span> <i class="fa fa-cogs" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSettings">
+                    <li>
+                        <a href="assets/page/settings.tpl" title="Account settings" data-toggle="modal" data-target="#settingsmodal">
+                            <div class="col-xs-4">
+                                <i class="fa fa-wrench" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <span>Account</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Need help?">
+                            <div class="col-xs-4">
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <span>Support</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="?logout" title="Good bye">
+                            <div class="col-xs-4">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-8 text-left">
+                                <span>Logout</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+				</div>
+			</div>
+		</div>
+    </header>
+</section>
+	
+<section class="content">
+	<div class="col-sm-12 col-xs-12 ownpostbox">
+		<div class="col-sm-1 hidden-xs"></div>
+		<div class="col-sm-3 col-xs-12 text-center">
+			<span class="glyphicon glyphicon-user usericon" aria-hidden="true"></span>
+			<h2>User</h2>
+		</div>
+		<div class="col-sm-1 hidden-xs"></div>
+		<div class="col-sm-3 col-xs-12">
+			<div class="well eventwell">
+				<h4 class="eventtitle">Create your own <font style="color:orange;font-size:26px;">Friends</font><font style="color:#4F5467;font-size:28px;">Event</font></h4>
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control addcomment" placeholder="Event name">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control addcomment" placeholder="Event date">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control addevent" rows="3" id="post" placeholder="Event description"></textarea>
+						<input type="submit" class="eventbtn" value="Create it !">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-sm-3 col-xs-12">
+			<div class="well">
+				<form>
+					<div class="form-group">
+						<textarea class="form-control addcomment" rows="3" id="post" placeholder="Add a post"></textarea>
+					</div>
+						<!-- <div class="form-group">
+							<input type="file" class="form-control" value="Add picture">
+						</div>
+						<div class="form-group">
+							<input type="file" class="form-control" value="Add video">
+						</div> -->
+					<div class="form-group">
+						<input type="submit" class="uploadbtn" value="Post it !">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-sm-1 hidden-xs"></div>
+	</div>
+
+<div class="content-posts active" id="posts">
+	<div class="col-sm-1 hidden-xs"></div>
+	<!-- ======================================================= -->
+	<!-- ================= photo gallery ======================= -->
+	<!-- ======================================================= -->
+
+	<!--<div class="col-sm-4 hidden-xs">-->
+	<!--	<div class="col-sm-12 text-center votebox">-->
+	<!--		<h2>Vote here for your favorite photo's!</h2>-->
+	<!--	</div>-->
+
+	<!--	<div class="col-sm-4 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+	<!--	<div class="col-sm-8 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+
+	<!--	<div class="col-sm-6 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+	<!--	<div class="col-sm-6 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+
+	<!--	<div class="col-sm-7 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+	<!--	<div class="col-sm-5 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+
+	<!--	<div class="col-sm-5 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+	<!--	<div class="col-sm-7 text-center populairbox">-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-up likebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--		<a href="#" type="button" class="votebtn">-->
+	<!--			<span class="glyphicon glyphicon-thumbs-down dislikebtn" aria-hidden="true"></span>-->
+	<!--		</a>-->
+	<!--	</div>-->
+	<!--</div>-->
+
+	<!-- ======================================================= -->
+	<!-- ======================================================= -->
+
+	<div id="posts-container" class="col-sm-12 col-xs-12 container-posts">
+		<div class="card-post">
+			<div class="row">
+				<div class="col-xs-3 col-sm-2">
+					<a href="personal-profile.html" title="Profile">
+						<img src="img/user.jpg" alt="User name" class="img-circle img-user">
+					</a>
+				</div>
+				<div class="col-xs-9 col-sm-10 info-user">
+					<h3><a href="personal-profile.html" title="Profile">My User</a></h3>
+					<p><i>2h</i></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 data-post">
+					<p>Lorem Ipsum Dolor si amet</p>
+					<div class="reaction">
+						<p class="emotioconsrow">&#x2764; 156 &#x1F603; 54 <a class="commbtn" id="combtn1">Comments</a></p>
+					</div>
+					<div class="comments" id="commentsSection1">
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Gerrit</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<hr>
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user2.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Tommy</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<div class="more-comments text-center">
+								<a href="#" class="btn morebtn">View more comments</a>
+							</div>
+						<form>
+							<textarea class="form-control proftext" rows="2" id="comment" placeholder="Add a comment"></textarea>
+							<button class="btn postcomtbtn">Comment !</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-post">
+			<div class="row">
+				<div class="col-xs-3 col-sm-2">
+					<a href="user-profile.html" title="User Profile">
+						<img src="img/user2.jpg" alt="User name" class="img-circle img-user">
+					</a>
+				</div>
+				<div class="col-xs-9 col-sm-10 info-user">
+					<h3><a href="user-profile.html" title="User Profile">User Name</a></h3>
+					<p><i>2h</i></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class=" col-sm-8 col-sm-offset-2 data-post">
+					<p>Lorem Ipsum Dolor si amet</p>
+					<img src="img/post.jpg" alt="image post" class="img-post">
+					<div class="reaction">
+						<p class="emotioconsrow">&#x2764; 2103 &#x1F603; 1902 <a class="commbtn" id="combtn2">Comments</a></p>
+					</div>
+					<div class="comments" id="commentsSection2">
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Bobo</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<hr>
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user2.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Kevin</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<div class="more-comments text-center">
+								<a href="#" class="btn morebtn">View more comments</a>
+							</div>
+						<form>
+							<textarea class="form-control proftext" rows="2" id="comment" placeholder="Add a comment"></textarea>
+							<button class="btn postcomtbtn">Comment !</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-post">
+			<div class="row">
+				<div class="col-xs-3 col-sm-2">
+					<a href="personal-profile.html" title="User Profile">
+						<img src="img/user.jpg" alt="User name" class="img-circle img-user">
+					</a>
+				</div>
+				<div class="col-xs-9 col-sm-10 info-user">
+					<h3><a href="personal-profile.html" title="User Profile">My User</a></h3>
+					<p><i>2h</i></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 data-post">
+					<p>Lorem Ipsum Dolor si amet</p>
+					Video here
+					<video controls>
+					  <source src="img/post-video.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					</video>
+					<div class="reaction">
+						<p class="emotioconsrow">&#x2764; 1259 &#x1F603; 93 <a class="commbtn" id="combtn3">Comments</a></p>
+					</div>
+					<div class="comments" id="commentsSection3">
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Bobo</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<hr>
+							<div class="row profrow">
+								<div class="col-sm-3 col-xs-3 profilecolum">
+									<img src="img/user2.jpg" title="User name yo" class="img-circle smllprofimg">
+									<b>Kevin</b>
+								</div>
+								<div class="col-sm-9 col-xs-9">
+									<p class="proftext">Lorem Ipsum Dolor si amet</p>
+								</div>
+							</div>
+							<div class="more-comments text-center">
+								<a href="#" class="btn morebtn">View more comments</a>
+							</div>
+						<form>
+							<textarea class="form-control proftext" rows="2" id="comment" placeholder="Add a comment"></textarea>
+							<button class="btn postcomtbtn">Comment !</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 text-center">
+			<div id="loading">
+				<span class="glyphicon glyphicon-repeat loadicon" aria-hidden="true"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-sm-12 col-xs-12 text-center endpage">
+	<h3><font style="color:orange;font-size:26px;">Oops</font> no more posts found, mayby you should make more <font style="color:orange;font-size:26px;">Friends</font></h3>
+</div>
+</section>
+
+    <div id="settingsmodal" class="modal fade text-center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            	
+            </div>
+        </div>
+    </div>
+
+	<script>
+		$(window).scroll(function() {
+		  if ($(document).scrollTop() > 50) {
+			$('header').addClass('scrol');
+		  } else
+			  $('header').removeClass('scrol');
+		});
+
+		$(window).scroll(function() {
+		  if ($(document).scrollTop() > 60) {
+			$('.ownpostbox').addClass('hidetop');
+		  } else
+			  $('.ownpostbox').removeClass('hidetop');
+		});
+		
+		$(document).ready(function(){
+			$("#combtn1").click(function(){
+				$("#commentsSection1").slideToggle("slow");
+			});
+		});
+		$(document).ready(function(){
+			$("#combtn2").click(function(){
+				$("#commentsSection2").slideToggle("slow");
+			});
+		});
+		$(document).ready(function(){
+			$("#combtn3").click(function(){
+				$("#commentsSection3").slideToggle("slow");
+			});
+		});
+	</script>
+</body>
+</html>

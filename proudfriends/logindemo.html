@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ProudFriends | Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/loginspecs.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- Font awesome -->
+  <script src="font-awesome/fontawesome-all.js"></script>
+  <!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Gloria+Hallelujah|Kaushan+Script|Poppins" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"><!-- empty div box to fill up some space --></div>
+        <div class="col-sm-6">
+            <div class="col-sm-12">
+              <form action="#" class="loginform">
+                <h2 class="proud">Proud<font style="color:orange;font-size:29px;">Friends</font></h2>
+                 <!-- Login form -->
+                <div class="form-group">
+                  <input id="email" type="text" class="form-control logininput" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <input id="password" type="password" class="form-control logininput" placeholder="Enter password">
+                </div>
+                <div class="form-group text-center">
+                  <input type="submit" id="login" value="Enter platform" class="btn btn-warning loginbtn">
+                  <br><br>
+                  <a href="#" type="button" class="btn btn-dark btn-sm extrabtn" id="forgotPassword">Forgot your password?</a>
+                  <a href="#" typr="button" class="btn btn-dark btn-sm extrabtn" id="register">Sign up for FREE !</a>
+                </div>
+              </form>
+              <!-- Button to learn more -->
+              <a href="#" title="Learn more" class="btn learnmorebox">
+                <h3 class="welcometitle">
+                  <font class="learn">Learn</font> more about <font class="proud">Proud</font><font class="friends">Friends</font> !
+                </h3>
+              </a>
+              
+              <form class="registerform">
+                <button type="button" class="btn btn-dark backbtn">Go back</button>
+                <h3>Register for free!</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control logininput" placeholder="First name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control logininput" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                  <input type="emial" class="form-control logininput" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control logininput" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control logininput" placeholder="Repeat password">
+                </div>
+                <div class="form-group">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-warning registerbtn" value="Register my best man">
+                </div>
+              </form>
+            </div>
+        </div>
+        <div class="col-sm-3"><!-- empty div box to fill up some space --></div>
+      </div>
+    </div>
+    
+    <div class="col-sm-4 forgotmailbox">
+      <button class="btn btn-dark closebtn" id="closeMail">Close</button>
+      <h4>Forgot your password?</h4>
+      <p>
+        Thats to bad, but before you cry out loud and start cursing<br>
+        you can reset your password!<br>
+        Just fill in your mail adres and we sent you a link to reset your password and your back in the game!
+      </p>
+      <input type="email" class="form-control logininput" placeholder="Your e-mail here...">
+      <br>
+      <input type="submit" class="btn btn-warning sendmailbtn" value="Send new password please">
+    </div>
+    
+  </section>
+  
+  <!-- footer with links -->
+  <section class="footer">
+    <div class="row footerbalk">
+      <div class="col-sm-4 text-center">
+        <button type="button" class="btn footerbtn">Language</button>
+      </div>
+      <div class="col-sm-4 text-center">
+        <button type="button" href="#" class="btn footerbtn">Terms</button>
+      </div>
+      <div class="col-sm-4 text-center">
+        <button type="button" href="#" class="btn footerbtn">Privacy</button>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#forgotPassword").click(function(){
+            $(".forgotmailbox").addClass("open");
+        });
+        $("#closeMail").click(function(){
+          $(".forgotmailbox").removeClass("open");
+        });
+    });
+    
+    $(document).ready(function(){
+        // $("#register").click(function(){
+        //     $(".loginform").css({"transform": "scale(0.01,0.01", "transition": "0.4s"});
+        //     $(".registerform").fadeIn(slow);
+        //     $(".registerform").css({"transform": "scale(1,1)", "transition": "0.4s"});
+        // });
+        $("#closeRegister").click(function(){
+          $(".loginform").removeClass("registerform");
+        });
+    });
+
+    $(document).ready(function(){
+      $("#login").click(function(){
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+
+        if(email == "" && password == "") {
+          // wanneer fout is
+          $("#email").addClass("error");
+          $("#password").addClass("error");
+          // wanneer goed is
+          $("#email").removeClass("success");
+          $("#password").removeClass("success");
+        } else if (email != "" && password == "") {
+          // wanneer email goed is en password niet
+          $("#email").removeClass("error");
+          $("#email").addClass("success");
+          $("#password").addClass("error");
+        } else if (email == "" && password != "") {
+          // wanneer password goed is en email niet
+          $("#password").removeClass("error");
+          $("#email").addClass("error");
+          $("#password").addClass("success");
+        } else {
+          alert("Login is goood");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
