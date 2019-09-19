@@ -258,17 +258,17 @@
 								<tr>
 									<td class="icontd"><i class="fas fa-envelope conicon"></i></td>
 									<td>E-mail:</td>
-									<td>schoutendesigns@outlook.com</td>
+									<td>work mail</td>
 								</tr>
 								<tr>
 									<td class="icontd"><i class="fas fa-map-marked-alt conicon"></i></td>
 									<td>Adres:</td>
-									<td>Scholeksterlaan 13</td>
+									<td>Straat en nummer</td>
 								</tr>
 								<tr>
 									<td class="icontd"><i class="fas fa-envelope-square conicon"></i></td>
 									<td>Postcode:</td>
-									<td>1742BK Schagen</td>
+									<td>postcode en stad</td>
 								</tr>
 							</table>
 						</div>
