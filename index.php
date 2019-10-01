@@ -4,22 +4,23 @@
 
 <section class="aboutcontent" id="about">
   	<div class="container">
-		<div class="col-sm-12">
+		<div class="col-sm-12 col-12">
 			<div class="abouttopblok">
 				<h2 class="abouttitle">Projecten</h2>
 			</div>
 			<div class="aboutblok">
 				<div class="row">
-					<div class="col-sm-12 introblok">
+					<div class="col-sm-12 col-12 introblok">
 						<p>
-							Hieronder een aantal websites waar ik aan gewerkt heb.
+							Hieronder een aantal websites die ik deels gemaakt heb,
+							door de bedrijven waar ik een stage had.
 						</p>
 						<p>
 							Aan de rechter kant vindt u <b>ProudFriends</b>, 
 							een website nog in ontwikkeling.
 						</p>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="https://www.rijschoolvanheuven.nl/" target="_blank" class="sitelink">
 							<div class="col-sm-12 sitecard">
 								<h4>Rijschool van Heuven</h4>
@@ -27,7 +28,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="https://www.johangriffioen.nl/" target="_blank" class="sitelink">
 							<div class="col-sm-12 sitecard">
 								<h4>Johan Griffioen</h4>
@@ -35,7 +36,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="../proudfriends/bs4demo.html" id="personalSite" class="sitelink">
 							<div class="col-sm-12 personalsitecard">
 								<h4>ProudFriends.com</h4>
@@ -46,7 +47,7 @@
 				</div>
 				<br>
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="https://www.deverfprof.nl/" target="_blank" class="sitelink">
 							<div class="col-sm-12 sitecard">
 								<h4>De verfprof</h4>
@@ -54,7 +55,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="/bodystyle/bodystyle_example.html" target="_blank" class="sitelink">
 							<div class="col-sm-12 sitecard">
 								<h4>Body-Style</h4>
@@ -62,7 +63,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-6">
 						<a href="https://www.financeenmore-hhw.nl/" target="_blank" class="sitelink">
 							<div class="col-sm-12 sitecard">
 								<h4>Finance & More</h4>
@@ -78,7 +79,7 @@
 
 <section class="servcontent" id="services">
   	<div class="container">
-		  <div class="col-sm-12">
+		  <div class="col-sm-12 col-12">
 		  		<div class="servtopblok">
 					<h2 class="servtitle">Diensten</h2>
 				</div>
@@ -91,7 +92,7 @@
 								<p class="card-text">
 									Wij maken elk soort websites, 
 									van kleine websites met enkele pagina's 
-									tot grote websites met veel pagina's en database.
+									tot grote websites met veel pagina's met een database.
 								</p>
 							</div>
 						</div>
@@ -112,7 +113,7 @@
 								<hr>
 								<p class="card-text">
 									Prolemen met het onderhoud? 
-									Wij kunnen dit overnemen en wijzigingen doorvoeren.
+									Wij kunnen dit overnemen, wijzigingen doorvoeren en onderhouden.
 									Heeft het spoed? 
 									Geen probleem.
 								</p>
@@ -133,11 +134,7 @@
 					<div class="card bg-primary text-white">
 						<div class="card-body">
 							<p>
-								Misschien is niet iedereen erin geintresseerd 
-								maar ik laat ook zien met welke talen ik werk.
-								Het zijn niet alleen programmeer talen die ik ken 
-								maar ook frameworks en libaries die je kan gebruiken met deze talen, 
-								zie hieronder:
+								Hieronder een aantal skills die we gebruiken bij het bouwen van websites tot applicaties:
 							</p>
 						</div>
 					</div>
@@ -241,14 +238,13 @@
 <section class="contactcontent" id="contact">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 col-12">
 				<div class="contacttopblok">
 					<h2 class="contacttitle">Contact</h2>
 				</div>
 				<div class="contactblok">
 					<div class="row">
-						<div class="col-sm-6 contactinfo">
-							<h4>Contact info</h4>
+						<div class="col-sm-6 col-12 contactinfo">
 							<table class="table table-borderless">
 								<tr>
 									<td class="icontd"><i class="fas fa-user-circle conicon"></i></td>
@@ -272,7 +268,7 @@
 								</tr>
 							</table>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-6 col-12">
 							<form class="contactform">
 								<div class="form-group">
 								<input type="text" placeholder="Uw naam" class="form-control coninput" required>
